@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a547087b87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-calculator"></i> Age Calculator</h1>
+    <div class="form-group">
+      <label for="birthdate">
+        <i class="fas fa-birthday-cake"> </i>
+        Date of Birth:
+      </label>
+      <input type="number" id="birthYear" min="1900" max="2099" placeholder="YYYY">
+      <span>/</span>
+      <input type="number" id="birthMonth" min="1" max="12" placeholder="MM">
+      <span>/</span>
+      <input type="number" id="birthDay" min="1" max="31" placeholder="DD">
+    </div>
+    <div class="form-group">
+      <label for="currentDatw">
+        <i class="fas fa-calendar-alt"></i>
+        Current Date:
+      </label>
+      <input type="number" id="currentYear" min="1900" max="2099" placeholder="YYYY">
+      <span>/</span>
+      <input type="number" id="currentMonth" min="1" max="12" placeholder="MM">
+      <span>/</span>
+      <input type="number" id="currentDay" min="1" max="31" placeholder="DD">
+    </div>
+    <button class="btn" onclick="calculateAge()">
+        <i class="fa-solid fa-calculator"></i>
+      Calculate Age
+    </button>
+    <div class="result" id="result"></div>
+  </div>
+<p>Created by Yogita</p>
+  <script src="script.js"></script>
+</body>
+</html>
